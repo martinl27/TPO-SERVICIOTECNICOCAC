@@ -8,7 +8,129 @@
 </head>
 <body>
     <h1>CONTACTO</h1><br>
-	<h1>CONTACTOPABLO</h1>
+	<h1>CONTACTOPABLO</h1><section class="contacto-systux" id="contacto">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-12 text-white text-center">
+                        <img src="images/logo-systux-consultoria-informatica-blanco.svg" width="150" alt="Systux">
+                        <ul class="nav justify-content-center pt-5 items-pie">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="soporte-tecnico.html">SOPORTE TÉCNICO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="consultoria.html">CONSULTORÍA</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="dragonfish.html">DRAGONFISH</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="lince-indumentaria.html">LINCE INDUMENTARIA</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="dfm.html">DFM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="diseno-web.html">DISEÑO WEB</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="diseno-web.html">DISEÑO GRÁFICO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://kudershop.com.ar/">KUDER</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="bg-light">
+                <div class="row py-5">
+                    <div class="col-12 text-white text-center">
+                        <h1>Contáctenos</h1>
+                        <h2 class="mb-5 px-3">Ante cualquier consulta, solicitud de presupuesto, puede contactarse completando el formulario.</h2>
+                        <a href="https://api.whatsapp.com/send?phone=5491139467161" class="btn btn-outline-light btn-systux d-none d-md-block" role="button" aria-pressed="true"><i class="fa fa-whatsapp"></i> WHATSAPP: +54 9 1139467161</a>
+                        <a href="https://api.whatsapp.com/send?phone=5491139467161" class="btn btn-outline-light btn-systux d-block d-md-none" role="button" aria-pressed="true"><i class="fa fa-whatsapp"></i> +54 9 1139467161</a>
+                    </div>
+                </div>    
+                <form id="frmConsulta" method="POST" action="enviarConsulta.php">
+                    <div class="row ">
+                        <div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <select class="form-control test" name="txtServicio" id="txtServicio"  required>
+                                <option>Soporte Técnico</option>
+                                <option>Consultoría</option>
+                                <option>Dragonfish Color y Talle</option>
+                                <option>Lince Indumentaria</option>
+                                <option>DFM</option>
+                                <option>Diseño Web</option>
+                                <option>Diseño Gráfico</option>
+                                <option>Kuder</option>
+								<option disabled="true" selected="true" value="">Servicio de interés</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <input type="text" class="form-control  test" style="background-color:transparent;" placeholder="Nombre" name="txtNombre" id="txtNombre"  required>
+                        </div>
+                        <div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <input type="text" class="form-control test" style="background-color:transparent;" placeholder="Apellido" name="txtApellido" id="txtApellido" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <select class="form-control test" name="txtProvincia" id="txtProvincia"  required>
+                                <option>CABA</option>          
+								<option>Buenos Aires</option>
+								<option>Catamarca</option>
+								<option>Chaco</option>
+								<option>Chubut</option>
+								<option>Cordoba</option>
+								<option>Corrientes</option>
+								<option>Entre Rios</option>
+								<option>Formosa</option>
+								<option>Jujuy</option>
+								<option>La Pampa</option>
+								<option>La Rioja</option>
+								<option>Mendoza</option>
+								<option>Misiones</option>
+								<option>Neuquen</option>
+								<option>Rio Negro</option>
+								<option>Salta</option>
+								<option>San Juan</option>
+								<option>San Luis</option>
+								<option>Santa Cruz</option>
+								<option>Santa Fe</option>
+								<option>Sgo. del Estero</option>
+								<option>Tierra del Fuego</option>
+								<option>Tucuman</option>
+								<option disabled="true" selected="true" value="">Seleccionar una Provincia</option>
+                            </select>
+                        </div>
+						<div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <input type="tel" class="form-control test-2" style="background-color:transparent;" placeholder="Teléfono" name="txtTelefono" id="txtTelefono" required>
+                        </div>
+                        <div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <input type="email" class="form-control test-2" style="background-color:transparent;" placeholder="E-mail"  name="txtEmail" id="txtEmail" required>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 pb-3 pb-md-4">
+                            <input type="text" class="form-control test-2" style="background-color:transparent;" placeholder="Empresa" name="txtEmpresa" id="txtEmpresa" required>
+                        </div>
+						<div class="col pb-3 pb-md-4">
+                            <input type="text" class="form-control test-3" style="background-color:transparent;" placeholder="Consulta" name="txtConsulta" id="txtConsulta">
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="col pb-3 pb-md-4">
+                            <div class="g-recaptcha" data-sitekey="6LfWGwsTAAAAAHgEj516pDFpJDeufl1UrFFLndLu"></div>
+                        </div> 
+                        <div class="col text-center text-md-right py-2">
+                            <input type="submit" value="ENVIAR CONSULTA"   class="btn btn-outline-light btn-systux text_botones">
+                        </div>                    
+                    </div>
+                </form>
+            </div>              
+        </section> 
+
+        
 
 </body>
 </html>
