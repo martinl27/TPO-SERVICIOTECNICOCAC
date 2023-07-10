@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+{% block content %}  
+{% load static %}
+<!--Barra de navegacion-->
+
+    
+    <div id="navbarContainer"></div>
+      
+      <!--Secciones-->
+        
+      <section>
+        <div class="img-portada-cervezas smartTamanioImg">
+            <p class="texto-portada-cervezas">Nuestros Productos</p>
+        </div>
+
+       </section>
+
+       <section class="contenedor-cerveza">
+        <div class="divTexto-cerveza">
+            <div>
+                <h2>Zapatillas</h2>
+                <br>
+                <b><p>Si estás buscando zapatillas de todas las marcas, has llegado al lugar indicado. Explora nuestra página web y descubre la variedad de estilos, colores y modelos que tenemos para ofrecerte. ¡Estamos seguros de que encontrarás la zapatilla perfecta que elevará tu estilo y te brindará la comodidad que mereces!</p></b>
+            </div>
+            </div>
+        <div class="imagen-smart">
+            <img src="{% static 'core/img/zapatilla1.jpg' %}" alt="zapatilla" class="imagen-cervezaSmart">
+        </div>
+    </section>
+
+    <section class="contenedor-cerveza">
+      <div class="divTexto-cerveza">
+          <div>
+              <h2>REMERAS</h2>
+              <br>
+              <b><p>Nuestro catálogo incluye remeras de todas las marcas líderes en el mercado de la moda. Desde los diseños icónicos de Nike hasta las creaciones vanguardistas de Adidas, pasando por las opciones elegantes de Puma y Reebok, tenemos todo lo que necesitas para encontrar la remera perfecta para cada ocasión. Nuestro objetivo es brindarte una amplia gama de opciones para que puedas expresar tu estilo personal de manera única.</p></b>
+          </div>
+          </div>
+          <div class="imagen-smart">
+          <img src="{% static 'core/img/remera.jpg' %}" alt="remera" class="imagen-cervezaSmart">
+      </div>
+  </section>
+
+  <section class="contenedor-cerveza">
+    <div class="divTexto-cerveza">
+        <div>
+            <h2>BUZOS</h2>
+            <br>
+            <b><p>Ya sea que necesites un buzo para tus actividades deportivas o simplemente quieras lucir a la moda en tu día a día, estamos seguros de que encontrarás lo que buscas en nuestro sitio web. Nuestro equipo se mantiene al tanto de las últimas tendencias y novedades en el mundo de la moda, para ofrecerte las colecciones más actuales y los diseños más populares.</p></b>
+        </div>
+        </div>
+        <div class="imagen-smart">
+        <img src="{% static 'core/img/buzo.jpg' %}" alt="buzo" class="imagen-cervezaSmart">
+    </div>
+</section>
+
+<section class="contenedor-cerveza">
+  <div class="divTexto-cerveza">
+      <div>
+          <h2>Accesorios</h2>
+          <br>
+          <b><p>Contamos con una variedad de accesorios deportivos de marcas reconocidas y de confianza en el mercado. Desde equipamiento para entrenamiento como pesas, bandas elásticas y balones, hasta accesorios de protección como rodilleras, muñequeras y cascos, tenemos todo lo que necesitas para llevar tu rendimiento al siguiente nivel.</p></b>
+      </div>
+      </div>
+      <div class="imagen-smart">
+      <img src="{% static 'core/img/accesorios.JPG' %}" alt="accesorios" class="imagen-cervezaSmart">
+  </div>
+</section>
+    
+
+     <!--Scroll button-->
+     <button class="scroll-top-btn hidden">&#11014;</button>
+
+     
+     {% endblock content %}

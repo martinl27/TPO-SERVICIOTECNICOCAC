@@ -1,0 +1,50 @@
+
+
+{% extends 'core/base.html' %}
+{{carritos}}
+{% block content %}
+
+
+{% load static %}
+    <!--Barra de navegacion-->
+
+     
+    <div id="navbarContainer"></div>
+      
+      <!--Contenido-->
+      
+      <section>
+        <div class="img-portada-menu">
+            <p class="texto-portada-menu">CARRITO DE COMPRAS</p>
+        </div>
+       </section>
+
+       <h1 class="titleMenu">COMPRA LO QUE QUIERAS</h1>
+{% for carrito in carritos %}
+       <section class="contenedor-menu">
+        <div>
+            <img class="imagen-menu" src="{{carrito.foto.url}}" alt="zapatilla">
+        </div>
+        <div>
+            <div class="divTexto-menu">
+                <h2>{{carrito.nombre}}</h2>
+                <p>{{carrito.descripcion}}</p>
+                <p>{{carrito.precio}}</p>
+            </div>
+            <div>
+                <a href=""> <button class="btnMasInfo" onclick="mensajeDelivery()">Comprar</button></a>
+            </div>
+        </div>
+    </section>
+{% endfor %}
+
+     <!--Scroll button-->
+     <button class="scroll-top-btn hidden">&#11014;</button>
+
+     <!--Contacto Whatsapp-->
+
+     <a id="app-whatsapp" target="blanck" href="https://api.whatsapp.com/send?phone=54092216404847&amp;text-hola!&nbsp;dejamé&nbsp;tu&nbsp;mensaje.">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+  
+    {% endblock content %}
